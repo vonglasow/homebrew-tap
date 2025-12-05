@@ -5,21 +5,21 @@
 class Gaia < Formula
   desc "Cli tool to ask local LLM with ollama"
   homepage "https://github.com/vonglasow/gaia"
-  version "2.6.3"
+  version "2.6.4"
   license "GPL3"
 
   on_macos do
     on_intel do
-      url "https://github.com/vonglasow/gaia/releases/download/v2.6.3/gaia_2.6.3_darwin_amd64.tar.gz"
-      sha256 "64e5441fd2494409a9d76a24140eeddbf0446b3b1848a66f1f6865002d6100a5"
+      url "https://github.com/vonglasow/gaia/releases/download/v2.6.4/gaia_2.6.4_darwin_amd64.tar.gz"
+      sha256 "842c8841fbdf23b21bd2df4f43d49891e2d771a1c993c65dc9f18e2f480f2e99"
 
       def install
         bin.install "gaia"
       end
     end
     on_arm do
-      url "https://github.com/vonglasow/gaia/releases/download/v2.6.3/gaia_2.6.3_darwin_arm64.tar.gz"
-      sha256 "d20ccacc35154fada954515360f5160f2784a47f8ffeeea16aeb25441148b488"
+      url "https://github.com/vonglasow/gaia/releases/download/v2.6.4/gaia_2.6.4_darwin_arm64.tar.gz"
+      sha256 "5224712b1e3ea8d8c8c6866fb33539acb217d09bc974bb51c576e0232f8109bf"
 
       def install
         bin.install "gaia"
@@ -30,8 +30,8 @@ class Gaia < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vonglasow/gaia/releases/download/v2.6.3/gaia_2.6.3_linux_amd64.tar.gz"
-        sha256 "d0196e2e69d42919841925904d05d047f43f5b33aae363865b1bf6fe01627a43"
+        url "https://github.com/vonglasow/gaia/releases/download/v2.6.4/gaia_2.6.4_linux_amd64.tar.gz"
+        sha256 "a4aea8f41608c183effec99b9672766a0f31083fc5a27e4865a6ac1ea059d456"
 
         def install
           bin.install "gaia"

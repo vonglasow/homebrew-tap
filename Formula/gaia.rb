@@ -5,21 +5,21 @@
 class Gaia < Formula
   desc "CLI to interact with local/remote LLMs (Ollama, OpenAI, Mistral), run tool actions and operator (investigate) mode"
   homepage "https://github.com/vonglasow/gaia"
-  version "2.15.0"
+  version "2.16.0"
   license "GPL3"
 
   on_macos do
     on_intel do
-      url "https://github.com/vonglasow/gaia/releases/download/v2.15.0/gaia_2.15.0_darwin_amd64.tar.gz"
-      sha256 "34e8749a9ce049909980a0279bb89c3344cd2e1ec77f7a1e404f754546d840fd"
+      url "https://github.com/vonglasow/gaia/releases/download/v2.16.0/gaia_2.16.0_darwin_amd64.tar.gz"
+      sha256 "df6ff7b23b664624b1f4bb7424feb9397ab8b08066efe7454222aa0859deeed8"
 
       def install
         bin.install "gaia"
       end
     end
     on_arm do
-      url "https://github.com/vonglasow/gaia/releases/download/v2.15.0/gaia_2.15.0_darwin_arm64.tar.gz"
-      sha256 "4943a87a01d0a670b0799de61b9e70e3807988748cf4997a7f79c2719dbba9ab"
+      url "https://github.com/vonglasow/gaia/releases/download/v2.16.0/gaia_2.16.0_darwin_arm64.tar.gz"
+      sha256 "145352655fc60afa0a6372446ad36176d4e35d9aea5bd54fcf01655b3445fa26"
 
       def install
         bin.install "gaia"
@@ -30,8 +30,8 @@ class Gaia < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vonglasow/gaia/releases/download/v2.15.0/gaia_2.15.0_linux_amd64.tar.gz"
-        sha256 "0cd312c1d57d68ba0fb8ee8cbe69f9b07569b1d6ad1a152658608e76c8f5d738"
+        url "https://github.com/vonglasow/gaia/releases/download/v2.16.0/gaia_2.16.0_linux_amd64.tar.gz"
+        sha256 "978bbf5fb5eebe2f4ed919678f2594a3efc39e51b03d6b24f6073a5e26a74779"
 
         def install
           bin.install "gaia"

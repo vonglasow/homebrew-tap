@@ -1,27 +1,27 @@
 class Cairn < Formula
   desc "Personal objective and task manager: a command line, an MCP server and a board"
   homepage "https://github.com/vonglasow/cairn"
-  version "0.6.0"
+  version "0.7.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/vonglasow/cairn/releases/download/v0.6.0/cairn-v0.6.0-darwin-arm64.tar.gz"
-      sha256 "bd91b19b8a22706676f3b8f9067d4efaaea910e446c930e7338f6e29eb4eb3c6"
+      url "https://github.com/vonglasow/cairn/releases/download/v0.7.0/cairn-v0.7.0-darwin-arm64.tar.gz"
+      sha256 "c7e1db8e8a8dcdf7354f3ceab85f0bb099137ecaf887e0b4e323f431e5152e04"
     end
     on_intel do
-      url "https://github.com/vonglasow/cairn/releases/download/v0.6.0/cairn-v0.6.0-darwin-amd64.tar.gz"
-      sha256 "e1b1d211a7ace660a194e8d0f581868bd84a7f87cb47a3b74dedbbca7bf5d40c"
+      url "https://github.com/vonglasow/cairn/releases/download/v0.7.0/cairn-v0.7.0-darwin-amd64.tar.gz"
+      sha256 "8e64d95a31a5c6e68c97b5b9f68ce7a40a77f8782c39cb7499ff376710fef12a"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/vonglasow/cairn/releases/download/v0.6.0/cairn-v0.6.0-linux-arm64.tar.gz"
-      sha256 "ab3eec29e52a1bac8b6b51721ceeab64b7d3f48ea99646b24aadd3ddec1572bf"
+      url "https://github.com/vonglasow/cairn/releases/download/v0.7.0/cairn-v0.7.0-linux-arm64.tar.gz"
+      sha256 "0fe50d3b4d200229979e0d492dab4e1d25b758e941bbd3862fc87fd3346c7b7d"
     end
     on_intel do
-      url "https://github.com/vonglasow/cairn/releases/download/v0.6.0/cairn-v0.6.0-linux-amd64.tar.gz"
-      sha256 "3949a06f8c0726b41079ba34652bf744ca9a2bedcce30e0ce8e1c6d398fa4ae9"
+      url "https://github.com/vonglasow/cairn/releases/download/v0.7.0/cairn-v0.7.0-linux-amd64.tar.gz"
+      sha256 "66c680337d025e839eb533aff28a5005beb5804bfad8ab73b311a1e8cc09b841"
     end
   end
 
@@ -40,6 +40,6 @@ class Cairn < Formula
   end
 
   test do
-    assert_match "0.6.0", shell_output("#{bin}/cairn --version")
+    assert_match "0.7.0", shell_output("#{bin}/cairn --version")
   end
 end

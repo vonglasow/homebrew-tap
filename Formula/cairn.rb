@@ -1,27 +1,27 @@
 class Cairn < Formula
   desc "Personal objective and task manager: a command line, an MCP server and a board"
   homepage "https://github.com/vonglasow/cairn"
-  version "0.9.0"
+  version "0.10.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/vonglasow/cairn/releases/download/v0.9.0/cairn-v0.9.0-darwin-arm64.tar.gz"
-      sha256 "76afefaf4d044bb3b5c763014a37c7dec47438f610211cf4b117b083dc315450"
+      url "https://github.com/vonglasow/cairn/releases/download/v0.10.0/cairn-v0.10.0-darwin-arm64.tar.gz"
+      sha256 "a1d0bc7417b7b5bb22fbbb5928b72bee875075ba59cd2ec442afb5e7b590393e"
     end
     on_intel do
-      url "https://github.com/vonglasow/cairn/releases/download/v0.9.0/cairn-v0.9.0-darwin-amd64.tar.gz"
-      sha256 "9964949303039446a79b6359ce0f0d87119d41897fb41313263bd1ce472773b1"
+      url "https://github.com/vonglasow/cairn/releases/download/v0.10.0/cairn-v0.10.0-darwin-amd64.tar.gz"
+      sha256 "0e4e5dbe4379cb2890c962d01442dddaf377752148dfe0fae1fec4b37955da3d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/vonglasow/cairn/releases/download/v0.9.0/cairn-v0.9.0-linux-arm64.tar.gz"
-      sha256 "08594f31bf93344fdf81d66ee3e19378ec63ec5b8f51291761939e6c65084642"
+      url "https://github.com/vonglasow/cairn/releases/download/v0.10.0/cairn-v0.10.0-linux-arm64.tar.gz"
+      sha256 "66d5da8b6538eb86070831c35a7409db93e315ec09079d6c44e593481fb26278"
     end
     on_intel do
-      url "https://github.com/vonglasow/cairn/releases/download/v0.9.0/cairn-v0.9.0-linux-amd64.tar.gz"
-      sha256 "e41357bcce418433307ca3a52cfd14fada1ad95778200162491322e751da0064"
+      url "https://github.com/vonglasow/cairn/releases/download/v0.10.0/cairn-v0.10.0-linux-amd64.tar.gz"
+      sha256 "4303d1ed9f58402e429f705fe3cd932085b15ac59fcf85ac38567e0075dc0b49"
     end
   end
 
@@ -40,6 +40,6 @@ class Cairn < Formula
   end
 
   test do
-    assert_match "0.9.0", shell_output("#{bin}/cairn --version")
+    assert_match "0.10.0", shell_output("#{bin}/cairn --version")
   end
 end

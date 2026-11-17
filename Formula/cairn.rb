@@ -1,27 +1,27 @@
 class Cairn < Formula
   desc "Personal objective and task manager: a command line, an MCP server and a board"
   homepage "https://github.com/vonglasow/cairn"
-  version "0.13.1"
+  version "0.13.2"
 
   on_macos do
     on_arm do
-      url "https://github.com/vonglasow/cairn/releases/download/v0.13.1/cairn-v0.13.1-darwin-arm64.tar.gz"
-      sha256 "cd4dcc08a19c734c1df1eed46412d3cdc8693f3ccc3edb439b874ed8f1ca8e07"
+      url "https://github.com/vonglasow/cairn/releases/download/v0.13.2/cairn-v0.13.2-darwin-arm64.tar.gz"
+      sha256 "5f6d2acf3271c2ee61762872a646bbcae67b6694d6e277bc553662d933e3dbd7"
     end
     on_intel do
-      url "https://github.com/vonglasow/cairn/releases/download/v0.13.1/cairn-v0.13.1-darwin-amd64.tar.gz"
-      sha256 "1eec922c4e8a93e1911bd540bd4031ca2951b81cb565b452231f3edf0188b75b"
+      url "https://github.com/vonglasow/cairn/releases/download/v0.13.2/cairn-v0.13.2-darwin-amd64.tar.gz"
+      sha256 "0ebcc979bb59305d1655874702e66cde0a07b4117a59ae71272c46f2494169d4"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/vonglasow/cairn/releases/download/v0.13.1/cairn-v0.13.1-linux-arm64.tar.gz"
-      sha256 "120e0c24b3dcb283e5fd3077c5bc2f9221cdf57c90971639f54a8a30b419cc18"
+      url "https://github.com/vonglasow/cairn/releases/download/v0.13.2/cairn-v0.13.2-linux-arm64.tar.gz"
+      sha256 "3b199c3ae2074dad20c6b65a837ade5de986cd9b417789aa949f51c9a227618d"
     end
     on_intel do
-      url "https://github.com/vonglasow/cairn/releases/download/v0.13.1/cairn-v0.13.1-linux-amd64.tar.gz"
-      sha256 "199195039bb20d97413f100bb23387ead16e383192eb095ad8febaa36aeafffe"
+      url "https://github.com/vonglasow/cairn/releases/download/v0.13.2/cairn-v0.13.2-linux-amd64.tar.gz"
+      sha256 "c67c2787d1f6d874f310f0f35d1abfbd4940e77e4d45e66a9cc4afac830669ea"
     end
   end
 
@@ -40,6 +40,6 @@ class Cairn < Formula
   end
 
   test do
-    assert_match "0.13.1", shell_output("#{bin}/cairn --version")
+    assert_match "0.13.2", shell_output("#{bin}/cairn --version")
   end
 end

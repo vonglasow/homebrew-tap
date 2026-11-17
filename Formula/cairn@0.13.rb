@@ -1,27 +1,27 @@
 class CairnAT013 < Formula
   desc "Personal objective and task manager: a command line, an MCP server and a board"
   homepage "https://github.com/vonglasow/cairn"
-  version "0.13.0"
+  version "0.13.1"
 
   on_macos do
     on_arm do
-      url "https://github.com/vonglasow/cairn/releases/download/v0.13.0/cairn-v0.13.0-darwin-arm64.tar.gz"
-      sha256 "0a08655d7a50b216a9afb4ceffa07d6027003291fc6e10c8f16e1bf3583464be"
+      url "https://github.com/vonglasow/cairn/releases/download/v0.13.1/cairn-v0.13.1-darwin-arm64.tar.gz"
+      sha256 "cd4dcc08a19c734c1df1eed46412d3cdc8693f3ccc3edb439b874ed8f1ca8e07"
     end
     on_intel do
-      url "https://github.com/vonglasow/cairn/releases/download/v0.13.0/cairn-v0.13.0-darwin-amd64.tar.gz"
-      sha256 "c4a0299d8e7cdb44728f48872ab9b81b13c3233db23724c5a1a4b08624b1b214"
+      url "https://github.com/vonglasow/cairn/releases/download/v0.13.1/cairn-v0.13.1-darwin-amd64.tar.gz"
+      sha256 "1eec922c4e8a93e1911bd540bd4031ca2951b81cb565b452231f3edf0188b75b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/vonglasow/cairn/releases/download/v0.13.0/cairn-v0.13.0-linux-arm64.tar.gz"
-      sha256 "09d87e9fa99819125199d72f6212fb09bf8ce812607582eb500edb9a53437246"
+      url "https://github.com/vonglasow/cairn/releases/download/v0.13.1/cairn-v0.13.1-linux-arm64.tar.gz"
+      sha256 "120e0c24b3dcb283e5fd3077c5bc2f9221cdf57c90971639f54a8a30b419cc18"
     end
     on_intel do
-      url "https://github.com/vonglasow/cairn/releases/download/v0.13.0/cairn-v0.13.0-linux-amd64.tar.gz"
-      sha256 "6e396d12943601a0c04276cd87769b085f197d6970b305993a3daa0e4f1b5778"
+      url "https://github.com/vonglasow/cairn/releases/download/v0.13.1/cairn-v0.13.1-linux-amd64.tar.gz"
+      sha256 "199195039bb20d97413f100bb23387ead16e383192eb095ad8febaa36aeafffe"
     end
   end
 
@@ -40,6 +40,6 @@ class CairnAT013 < Formula
   end
 
   test do
-    assert_match "0.13.0", shell_output("#{bin}/cairn --version")
+    assert_match "0.13.1", shell_output("#{bin}/cairn --version")
   end
 end
